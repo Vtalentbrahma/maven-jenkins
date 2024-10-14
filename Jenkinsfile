@@ -3,10 +3,7 @@ pipeline {
     tools{
         maven 'maven3'
     }
-
-    
-        
-        stage('maven build'){
+    stage('maven build'){
          steps{
             sh 'mvn clean package'
          }
